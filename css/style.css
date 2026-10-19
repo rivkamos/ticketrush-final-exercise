@@ -15,3 +15,4 @@ main { max-width: 460px; margin: -8px auto 40px; padding: 0 16px; }
 button { width:100%; padding: 14px; border:0; border-radius: 12px; background: var(--accent); color:#fff; font-size: 1.1rem; cursor:pointer; }
 button:disabled { opacity:.4; cursor:not-allowed; }
 .msg { color:#ffb3c7; min-height: 1.2em; }
+.promo-banner { background: var(--accent); color:#fff; text-align:center; padding: 10px; font-weight:700; }
