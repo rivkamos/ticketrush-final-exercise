@@ -16,3 +16,4 @@ button { width:100%; padding: 14px; border:0; border-radius: 12px; background: v
 button:disabled { opacity:.4; cursor:not-allowed; }
 .msg { color:#ffb3c7; min-height: 1.2em; }
 .promo-banner { background: var(--accent); color:#fff; text-align:center; padding: 10px; font-weight:700; }
+.lineup { font-size: .95rem; letter-spacing: .5px; }
