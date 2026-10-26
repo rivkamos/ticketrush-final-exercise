@@ -14,7 +14,7 @@
     var total = calcTotal(qty, isMember);
     if (total === null || qty < 1) {
       totalEl.textContent = '—';
-      msgEl.textContent = 'כמות לא תקינה';
+      msgEl.textContent = qty < 1 ? 'בחרי לפחות כרטיס אחד' : 'כמות לא תקינה להזמנה';
       buyBtn.disabled = true;
     } else {
       totalEl.textContent = formatPrice(total);
