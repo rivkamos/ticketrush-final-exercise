@@ -1,5 +1,5 @@
 // הגדרות חיבור לספק התשלומים
 const CONFIG = {
-  PAYMENT_API_KEY: 'tickrush_live_FAKE_7f3a9c1e5b2d4086',
+  PAYMENT_API_KEY: 'YOUR_API_KEY_HERE',
   PAYMENT_URL: 'https://payments.example.com/v1'
 };
