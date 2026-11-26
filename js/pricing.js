@@ -1,10 +1,10 @@
 // מחירון TicketRush
-const TICKET_PRICE = 350;   
-const SERVICE_FEE = 12;    
-const MAX_TICKETS = 8;      
-const MEMBER_MAX_TICKETS = 4;  
-const MEMBER_DISCOUNT = 0.2;    
-const STUDENT_DISCOUNT = 0.15; 
+const TICKET_PRICE = 350;
+const SERVICE_FEE = 12;
+const MAX_TICKETS = 8;
+const MEMBER_MAX_TICKETS = 6;
+const MEMBER_DISCOUNT = 0.2;
+const STUDENT_DISCOUNT = 0.15;
 
 function maxTickets(isMember) {
   return isMember ? MEMBER_MAX_TICKETS : MAX_TICKETS;
