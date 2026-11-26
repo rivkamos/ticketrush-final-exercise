@@ -1,0 +1,384 @@
+{
+  "version": 1,
+  "id": "lea-shtul",
+  "startedAt": 1795716624790,
+  "finishedAt": 1795720167038,
+  "elapsedMin": 59.04,
+  "overtime": false,
+  "score": 100,
+  "max": 100,
+  "items": [
+    {
+      "id": "A1",
+      "group": "feature",
+      "he": "מחיר רגיל לא נשבר (2 כרטיסים = 724)",
+      "en": "regular price intact (2 tickets = 724)",
+      "pts": 3,
+      "got": 3,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "A2",
+      "group": "feature",
+      "he": "חברת מועדון: 20% הנחה על הכרטיס בלבד (2 כרטיסים = 584)",
+      "en": "member: 20% off ticket only (= 584)",
+      "pts": 5,
+      "got": 5,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "A3",
+      "group": "feature",
+      "he": "מכסה ללקוחה רגילה: 8",
+      "en": "regular limit is 8",
+      "pts": 3,
+      "got": 3,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "A4",
+      "group": "feature",
+      "he": "מכסה לחברת מועדון: 6 (אחרי שינוי הדרישות)",
+      "en": "member limit is 6 (after the change)",
+      "pts": 4,
+      "got": 4,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "A5",
+      "group": "feature",
+      "he": "כמות לא חוקית מחזירה null (0, 9, 7 לחברה)",
+      "en": "invalid quantity returns null",
+      "pts": 3,
+      "got": 3,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "A6",
+      "group": "feature",
+      "he": "גבולות המכסה עובדים (6 לחברה, 8 לרגילה)",
+      "en": "limits boundaries work",
+      "pts": 2,
+      "got": 2,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "B1",
+      "group": "hotfix",
+      "he": "התצוגה תקינה שוב (formatPrice)",
+      "en": "price display fixed",
+      "pts": 5,
+      "got": 5,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "B2",
+      "group": "hotfix",
+      "he": "בוצע revert (קומיט ביטול) ולא תיקון ידני",
+      "en": "a real revert commit exists",
+      "pts": 4,
+      "got": 4,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "B3",
+      "group": "hotfix",
+      "he": "ההיסטוריה לא שוכתבה (הקומיט השבור והתג v1.0 עדיין שם)",
+      "en": "history not rewritten",
+      "pts": 3,
+      "got": 3,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "B4",
+      "group": "hotfix",
+      "he": "הבאנר והפוטר נשארו באתר",
+      "en": "banner and footer kept",
+      "pts": 3,
+      "got": 3,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "C1",
+      "group": "waitlist",
+      "he": "joinWaitlist קיימת ומחזירה מערך",
+      "en": "joinWaitlist exists and returns an array",
+      "pts": 2,
+      "got": 2,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "C2",
+      "group": "waitlist",
+      "he": "מסירה רווחים והופכת לאותיות קטנות",
+      "en": "trims and lowercases",
+      "pts": 2,
+      "got": 2,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "C3",
+      "group": "waitlist",
+      "he": "לא מוסיפה מייל שכבר קיים",
+      "en": "ignores duplicates",
+      "pts": 2,
+      "got": 2,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "C4",
+      "group": "waitlist",
+      "he": "מייל לא תקין לא נוסף",
+      "en": "ignores invalid emails",
+      "pts": 2,
+      "got": 2,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "C5",
+      "group": "waitlist",
+      "he": "לא משנה את המערך המקורי ומחזירה מערך חדש",
+      "en": "does not mutate input",
+      "pts": 2,
+      "got": 2,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "D1",
+      "group": "conflict",
+      "he": "סטודנטית: 15% הנחה (2 כרטיסים = 619)",
+      "en": "student 15% off (= 619)",
+      "pts": 4,
+      "got": 4,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "D2",
+      "group": "conflict",
+      "he": "חברת מועדון + סטודנטית: רק ההנחה הגדולה (= 584)",
+      "en": "discounts not stacked (= 584)",
+      "pts": 3,
+      "got": 3,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "D3",
+      "group": "conflict",
+      "he": "אין סימני התנגשות (<<<<<<<) בקבצים",
+      "en": "no conflict markers left",
+      "pts": 3,
+      "got": 3,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "D4",
+      "group": "conflict",
+      "he": "הקומיטים של דנה נכנסו להיסטוריה של main",
+      "en": "Dana's commits are in main",
+      "pts": 2,
+      "got": 2,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "D5",
+      "group": "conflict",
+      "he": "כל הבדיקות עוברות (node tests/run.js)",
+      "en": "all tests pass",
+      "pts": 3,
+      "got": 3,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "E1",
+      "group": "review",
+      "he": "קיים ענף review/noa-refund עם review.md",
+      "en": "review branch with review.md",
+      "pts": 3,
+      "got": 3,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "E2",
+      "group": "review",
+      "he": "הסקירה מזהה את הבעיה: עמלת השירות מוחזרת בטעות",
+      "en": "review finds the service-fee bug",
+      "pts": 3,
+      "got": 3,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "E3",
+      "group": "review",
+      "he": "הענף של נועה לא מוזג ל-main",
+      "en": "Noa's branch was not merged",
+      "pts": 2,
+      "got": 2,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "F1",
+      "group": "cherry",
+      "he": "תאריך ההופעה תוקן",
+      "en": "concert date fixed",
+      "pts": 4,
+      "got": 4,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "F2",
+      "group": "cherry",
+      "he": "שום קוד WIP של רות לא נכנס ל-main",
+      "en": "no WIP code from Ruth",
+      "pts": 3,
+      "got": 3,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "F3",
+      "group": "cherry",
+      "he": "הועבר קומיט אחד בלבד של רות (cherry-pick)",
+      "en": "exactly one Ruth commit via cherry-pick",
+      "pts": 3,
+      "got": 3,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "G1",
+      "group": "security",
+      "he": "js/config.js כבר לא במעקב של Git",
+      "en": "config.js untracked",
+      "pts": 3,
+      "got": 3,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "G2",
+      "group": "security",
+      "he": "config.js מוגן ב-.gitignore",
+      "en": "config.js in .gitignore",
+      "pts": 2,
+      "got": 2,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "G3",
+      "group": "security",
+      "he": "קיים js/config.example.js בלי מפתח אמיתי",
+      "en": "config.example.js without the key",
+      "pts": 1,
+      "got": 1,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "G4",
+      "group": "security",
+      "he": "המפתח לא מופיע באף קובץ ב-main",
+      "en": "key no longer in any tracked file",
+      "pts": 2,
+      "got": 2,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "H1",
+      "group": "release",
+      "he": "תג v1.1 על הקומיט האחרון של main",
+      "en": "tag v1.1 on main tip",
+      "pts": 4,
+      "got": 4,
+      "ok": true,
+      "note": ""
+    },
+    {
+      "id": "H2",
+      "group": "release",
+      "he": "עבדה עם כמה Worktrees (לפי הניטור)",
+      "en": "used several worktrees (monitor)",
+      "pts": 4,
+      "got": 4,
+      "ok": true,
+      "note": "6 worktrees"
+    },
+    {
+      "id": "I1",
+      "group": "quality",
+      "he": "הודעות קומיט ברורות",
+      "en": "clear commit messages",
+      "pts": 6,
+      "got": 6,
+      "ok": true,
+      "note": "4/4 ברורות"
+    }
+  ],
+  "monitor": {
+    "worktrees": {
+      "feature/early-access": {
+        "path": "C:/Users/User/Desktop/לאה תכנות/תרגיל GITHUB/early-access",
+        "firstSeen": 1795716716781
+      },
+      "hotfix/price": {
+        "path": "C:/Users/User/Desktop/לאה תכנות/תרגיל GITHUB/hotfix",
+        "firstSeen": 1795717186486
+      },
+      "detached@hotfix": {
+        "path": "C:/Users/User/Desktop/לאה תכנות/תרגיל GITHUB/hotfix",
+        "firstSeen": 1795717333665
+      },
+      "feature/waitlist": {
+        "path": "C:/Users/User/Desktop/לאה תכנות/תרגיל GITHUB/waitlist",
+        "firstSeen": 1795717723010
+      },
+      "review/noa-refund": {
+        "path": "C:/Users/User/Desktop/לאה תכנות/תרגיל GITHUB/review-noa",
+        "firstSeen": 1795719067636
+      },
+      "security/untrack-key": {
+        "path": "C:/Users/User/Desktop/לאה תכנות/תרגיל GITHUB/security",
+        "firstSeen": 1795719790533
+      }
+    },
+    "maxConcurrent": 5
+  },
+  "hintsUsed": [],
+  "alertsFired": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ]
+}
