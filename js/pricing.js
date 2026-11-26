@@ -5,8 +5,7 @@ const MAX_TICKETS = 8;
 const STUDENT_DISCOUNT = 0.15;
 
 function maxTickets(isMember) {
-  return isMember ? 4 : MAX_TICKETS;
-}
+return isMember ? 6 : MAX_TICKETS;}
 
 function calcTotal(qty, isMember = false, isStudent = false) {
   if (qty < 1 || qty > maxTickets(isMember)) {
