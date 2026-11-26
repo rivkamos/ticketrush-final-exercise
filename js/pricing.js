@@ -1,16 +1,14 @@
-// מחירון TicketRush
-const TICKET_PRICE = 350; // ₪ לכרטיס
-const SERVICE_FEE = 12;   // ₪ עמלת שירות לכל כרטיס
-const MAX_TICKETS = 8;    // מקסימום כרטיסים להזמנה
+function calcTotal(qty, isMember, isStudent) {
+  let discount = 0;
 
-function maxTickets() {
-  return MAX_TICKETS;
-}
+  if (isMember) {
+    discount = 0.20;
+  }
 
-function calcTotal(qty) {
-  return qty * (TICKET_PRICE + SERVICE_FEE);
-}
+  if (isStudent && discount < 0.15) {
+    discount = 0.15;
+  }
 
-if (typeof module !== 'undefined') {
-  module.exports = { TICKET_PRICE, SERVICE_FEE, MAX_TICKETS, maxTickets, calcTotal };
+  const discountedPrice = TICKET_PRICE * (1 - discount);
+  return qty * (discountedPrice + SERVICE_FEE);
 }
