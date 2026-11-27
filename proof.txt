@@ -1,0 +1,193 @@
+### git worktree list
+C:/Users/9090/Desktop/ticketrush-final-exercise 5d62b01 [main]
+C:/Users/9090/Desktop/early-access              c869b81 [feature/early-access]
+C:/Users/9090/Desktop/hotfix                    0b221ca [hotfix/price]
+C:/Users/9090/Desktop/review                    eb5dfc6 [review/noa-refund]
+C:/Users/9090/Desktop/waitlist                  9d6832f [feature/waitlist]
+
+### git branch -a -vv
++ feature/early-access                                     c869b81 (C:/Users/9090/Desktop/early-access) feat: raise member ticket limit to 6
++ feature/waitlist                                         9d6832f (C:/Users/9090/Desktop/waitlist) feat: add waitlist join function
++ hotfix/price                                             0b221ca (C:/Users/9090/Desktop/hotfix) Revert "perf: faster price formatting"
+* main                                                     5d62b01 [origin/main: ahead 12] Merge branch 'feature/waitlist'
++ review/noa-refund                                        eb5dfc6 (C:/Users/9090/Desktop/review) [origin/noa/refund: ahead 1] docs: review of noa refund - service fee refunded
+  remotes/origin/HEAD                                      -> origin/main
+  remotes/origin/dana/promo                                d4b1e35 test: add student discount tests
+  remotes/origin/dvori-werner/feature/early-access         ea988fa feat: raise member ticket limit from 4 to 6
+  remotes/origin/dvori-werner/feature/waitlist             fc13224 feat: add joinWaitlist for sold-out events
+  remotes/origin/dvori-werner/hotfix/price                 f1b3ade Revert "perf: faster price formatting"
+  remotes/origin/dvori-werner/main                         465c3dc Merge branch 'feature/waitlist'
+  remotes/origin/dvori-werner/result                       8af8f8b result dvori-werner 100/100
+  remotes/origin/dvori-werner/review/noa-refund            8466ab2 docs: review of noa/refund - service fee is refunded by mistake
+  remotes/origin/lea-shtul/feature/early-access            9475612 feat: raise member ticket limit from 4 to 6
+  remotes/origin/lea-shtul/feature/waitlist                8ea264b feat: add customer waitlist
+  remotes/origin/lea-shtul/hotfix/price                    762c3b4 Revert "perf: faster price formatting"
+  remotes/origin/lea-shtul/main                            6c8c8ab Merge branch 'security/untrack-key'
+  remotes/origin/lea-shtul/result                          5796af5 result lea-shtul 100/100
+  remotes/origin/lea-shtul/review/noa-refund               7838fb7 docs: review of noa/refund
+  remotes/origin/lea-shtul/security/untrack-key            673df84 security: untrack API key config, add config.example.js
+  remotes/origin/main                                      6e5b25d feat: friendlier message for empty quantity
+  remotes/origin/noa/refund                                f7e8785 test: refund tests
+  remotes/origin/rivki-lifkovich/feature/early-access      12b6413 fix: increase member ticket limit to six
+  remotes/origin/rivki-lifkovich/feature/waitlist          4c18595 feat: add customer waitlist
+  remotes/origin/rivki-lifkovich/hotfix/price              2425efb Revert "perf: faster price formatting"
+  remotes/origin/rivki-lifkovich/main                      b0d43bb merge: add customer waitlist
+  remotes/origin/rivki-lifkovich/result                    f9555cc result rivki-lifkovich 98/100
+  remotes/origin/rivki-lifkovich/review/noa-refund         6b10854 docs: review Noa refund implementation
+  remotes/origin/ruth/fixes                                fee9f58 wip: try new fonts
+  remotes/origin/shulamit-zohar/feature/early-access       dfc0187 feat: update member ticket limit
+  remotes/origin/shulamit-zohar/hotfix/price               2207976 Revert "perf: faster price formatting"
+  remotes/origin/shulamit-zohar/main                       d3250be feat: add early access and waitlist
+  remotes/origin/shulamit-zohar/result                     0976d45 result shulamit-zohar 81/100
+  remotes/origin/zilberberg-batya/feature/early-access     2418a68 feat(pricing): raise club member ticket cap from 4 to 6 per order
+  remotes/origin/zilberberg-batya/feature/waitlist         357d313 test(waitlist): cover validation, normalisation, duplicates and immutability
+  remotes/origin/zilberberg-batya/hotfix/price             bbca597 fix(format): revert broken price formatting that showed 0.00 to customers
+  remotes/origin/zilberberg-batya/main                     01218a2 merge: release waitlist sign-up into main
+  remotes/origin/zilberberg-batya/result                   dac1c60 result zilberberg-batya 96/100
+  remotes/origin/zilberberg-batya/review/noa-refund        b1206d8 review: noa/refund is not ready to merge - refund formula includes the service fee
+  remotes/origin/zilberberg-batya/security/untrack-api-key 9bc9099 security: stop tracking js/config.js which held the payment API key
+
+### git log --graph --oneline --all -n 80
+*   5d62b01 (HEAD -> main, tag: v1.1) Merge branch 'feature/waitlist'
+|\  
+| * 9d6832f (feature/waitlist) feat: add waitlist join function
+* |   bf9b42e Merge branch 'feature/early-access'
+|\ \  
+| * | c869b81 (feature/early-access) feat: raise member ticket limit to 6
+| * | d6d5a83 fix: resolve leftover conflict markers in pricing
+| * |   e2c8548 merge: combine student promo with member discount
+| |\ \  
+| * | | 3ec44b4 feat: early-access discount for members
+* | | | d5eda65 chore: stop tracking config.js with API key, add example
+* | | | 18bec90 fix: correct concert date in events.js
+| |_|/  
+|/| |   
+* | | 0b221ca (hotfix/price) Revert "perf: faster price formatting"
+|/ /  
+| | * eb5dfc6 (review/noa-refund) docs: review of noa refund - service fee refunded
+| | | * 8af8f8b (origin/dvori-werner/result) result dvori-werner 100/100
+| | | *   465c3dc (tag: dvori-werner/v1.1, origin/dvori-werner/main) Merge branch 'feature/waitlist'
+| | | |\  
+| | | | * fc13224 (origin/dvori-werner/feature/waitlist) feat: add joinWaitlist for sold-out events
+| | | * |   f0b6c62 Merge branch 'feature/early-access'
+| | | |\ \  
+| | | | * | ea988fa (origin/dvori-werner/feature/early-access) feat: raise member ticket limit from 4 to 6
+| | | | * |   f08cd13 merge: student discount from dana/promo, keep larger discount only
+| | | | |\ \  
+| | |_|_|/ /  
+| |/| | | |   
+| | | | * | d2eee9a feat: member early-access discount and ticket limits
+| |_|_|/ /  
+|/| | | |   
+| | | * | 8b4ef77 security: stop tracking config.js with API key, add config example
+| | | * | 80c6788 fix: correct concert date in events.js
+| | | |/  
+| | | * f1b3ade (origin/dvori-werner/hotfix/price) Revert "perf: faster price formatting"
+| |_|/  
+|/| |   
+| | | * 8466ab2 (origin/dvori-werner/review/noa-refund) docs: review of noa/refund - service fee is refunded by mistake
+| | |/  
+| | | * 5796af5 (origin/lea-shtul/result) result lea-shtul 100/100
+| | | *   6c8c8ab (tag: lea-shtul/v1.1, origin/lea-shtul/main) Merge branch 'security/untrack-key'
+| | | |\  
+| | | | * 673df84 (origin/lea-shtul/security/untrack-key) security: untrack API key config, add config.example.js
+| | | * |   a87fbd5 Merge branch 'feature/waitlist'
+| | | |\ \  
+| | | | * | 8ea264b (origin/lea-shtul/feature/waitlist) feat: add customer waitlist
+| | | * | |   443e736 Merge branch 'feature/early-access'
+| | | |\ \ \  
+| | | | |_|/  
+| | | |/| |   
+| | | | * | 9475612 (origin/lea-shtul/feature/early-access) feat: raise member ticket limit from 4 to 6
+| | | | * | ab824bb Revert "perf: faster price formatting"
+| | | | * |   8844faf merge: add student discount from dana/promo
+| | | | |\ \  
+| | |_|_|/ /  
+| |/| | | |   
+| | | | * | 16e1511 feat: add early access member pricing
+| |_|_|/ /  
+|/| | | |   
+| | | * | ec2999d fix: correct concert date in events.js
+| | | |/  
+| | | * 762c3b4 (origin/lea-shtul/hotfix/price) Revert "perf: faster price formatting"
+| |_|/  
+|/| |   
+| | | * 7838fb7 (origin/lea-shtul/review/noa-refund) docs: review of noa/refund
+| | |/  
+| | | * 0976d45 (origin/shulamit-zohar/result) result shulamit-zohar 81/100
+| | | * d3250be (origin/shulamit-zohar/main) feat: add early access and waitlist
+| | | * e04978f fix: correct concert date in events.js
+| | | * fc5b48e security: add config example and gitignore
+| | | * 2ab9fe1 security: untrack API key
+| | | * 2207976 (origin/shulamit-zohar/hotfix/price) Revert "perf: faster price formatting"
+| |_|/  
+|/| |   
+| | | * f9555cc (origin/rivki-lifkovich/result) result rivki-lifkovich 98/100
+| | | *   b0d43bb (tag: rivki-lifkovich/v1.1, origin/rivki-lifkovich/main) merge: add customer waitlist
+| | | |\  
+| | | | * 4c18595 (origin/rivki-lifkovich/feature/waitlist) feat: add customer waitlist
+| | | * |   907bdcc merge: complete early access with student promotion
+| | | |\ \  
+| | | | * | 12b6413 (origin/rivki-lifkovich/feature/early-access) fix: increase member ticket limit to six
+| | | | * |   fbbeacd merge: add student promotion to early access
+| | | | |\ \  
+| | |_|_|/ /  
+| |/| | | |   
+| | | | * | 1734043 feat: add early access member pricing
+| |_|_|/ /  
+|/| | | |   
+| | | * | 90a40c6 security: remove payment API key from tracking
+| | | * | 9640870 fix: correct concert date in events.js
+| | | |/  
+| | | * 0a85d1c merge: fix production price formatting
+| |_|/| 
+|/| | | 
+| | | * 2425efb (origin/rivki-lifkovich/hotfix/price) Revert "perf: faster price formatting"
+| |_|/  
+|/| |   
+| | | * 6b10854 (origin/rivki-lifkovich/review/noa-refund) docs: review Noa refund implementation
+| | |/  
+| | | * dfc0187 (origin/shulamit-zohar/feature/early-access) feat: update member ticket limit
+| |_|/  
+|/| |   
+| | | * dac1c60 (origin/zilberberg-batya/result) result zilberberg-batya 96/100
+| | | *   01218a2 (tag: zilberberg-batya/v1.1, origin/zilberberg-batya/main) merge: release waitlist sign-up into main
+| | | |\  
+| | | | * 357d313 (origin/zilberberg-batya/feature/waitlist) test(waitlist): cover validation, normalisation, duplicates and immutability
+| | | | * d706327 feat(waitlist): add joinWaitlist for sold-out sign-ups
+| | | * |   b687945 merge: release early access with student promo into main
+| | | |\ \  
+| | | | * | 2418a68 (origin/zilberberg-batya/feature/early-access) feat(pricing): raise club member ticket cap from 4 to 6 per order
+| | | | * | 24cd249 merge: bring the price-formatting hotfix from main into early access
+| | | | |\| 
+| | | | * |   4be311d merge: combine student promo (dana/promo) with early access
+| | | | |\ \  
+| | |_|_|/ /  
+| |/| | | |   
+| * | | | | d4b1e35 (origin/dana/promo) test: add student discount tests
+| * | | | | 0841085 feat: student discount (15%)
+|/ / / / /  
+| | | * | b85d6a7 test(pricing): cover member discount, caps and invalid quantities
+| | | * | 8dd1830 feat(pricing): 20% member discount on ticket price with 4-ticket cap
+| |_|/ /  
+|/| | |   
+| | * | 9bc9099 (origin/zilberberg-batya/security/untrack-api-key) security: stop tracking js/config.js which held the payment API key
+| | * | f5b668a fix: correct concert date in events.js
+| | |/  
+| | * bbca597 (origin/zilberberg-batya/hotfix/price) fix(format): revert broken price formatting that showed 0.00 to customers
+| |/  
+|/|   
+| | * b1206d8 (origin/zilberberg-batya/review/noa-refund) review: noa/refund is not ready to merge - refund formula includes the service fee
+| |/  
+| * f7e8785 (origin/noa/refund) test: refund tests
+| * 61bfedd feat: refund calculation for cancelled orders
+|/  
+| * fee9f58 (origin/ruth/fixes) wip: try new fonts
+| * 72063d7 debug: dump state to console
+| * 20cd6a9 WIP: try removing ticket limits
+| * 8284d98 fix: correct concert date in events.js
+| * 339324e WIP: new checkout flow (do not merge)
+|/  
+* 6e5b25d (origin/main, origin/HEAD) feat: friendlier message for empty quantity
+* 9119fe2 fix: typo in hero heading
+* a61f4ad feat: add footer with links
