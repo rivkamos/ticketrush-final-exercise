@@ -2,9 +2,10 @@
 const TICKET_PRICE = 350; // ₪ לכרטיס
 const SERVICE_FEE = 12;   // ₪ עמלת שירות לכל כרטיס
 const MAX_TICKETS = 8;    // מקסימום כרטיסים להזמנה
+const MEMBER_MAX_TICKETS = 4; // מכסה לחברות מועדון
 
-function maxTickets() {
-  return MAX_TICKETS;
+function maxTickets(isMember = false) {
+  return isMember ? MEMBER_MAX_TICKETS : MAX_TICKETS;
 }
 
 function calcTotal(qty) {
